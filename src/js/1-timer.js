@@ -10,6 +10,9 @@ const daysEl = document.querySelector("[data-days]");
 const hoursEl = document.querySelector("[data-hours]");
 const minutEl = document.querySelector("[data-minutes]");
 const secondsEl = document.querySelector("[data-seconds]");
+
+startBtn.setAttribute('disabled', '');
+
 let timerInterval;
 let userSelectedDate;
 
@@ -35,6 +38,7 @@ startBtn.disabled = false;
 flatpickr(datetimePicker, options);
 startBtn.addEventListener("click", () => {
 startBtn.disabled = true;
+startBtn.classList.remove('this-date');
 datetimePicker.disabled = true;
 startCountdown();
 });

@@ -23,10 +23,14 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+/* Timer */
 body {
 background-color: #fff;
+background-color: #fff;
+padding-top: 36px;
+padding-left: 156px;
 }
+
 .input-item {
 border: 1px solid #808080;
 border-radius: 4px;
@@ -46,7 +50,7 @@ border: 1px solid #000;
 outline: none;
 border: 1px solid #4e75ff;
 }
-.btn-item {
+button[data-start] {
 border: none;
 border-radius: 8px;
 padding: 8px 16px;
@@ -57,24 +61,12 @@ letter-spacing: 0.04em;
 color: #989898;
 background-color: #cfcfcf;
 }
-/* .datetimePicker.disabled {
-background-color: #4E75FF;
+button[this-date] {
+background: #4e75ff;
 color: #fff;
 cursor: pointer;
 }
-.datetimePicker.disabled:hover {
-background: #6c8cff;
-}
-.startBtn.disabled {
-
-} */
-button[data-start].disabled {
-background-color: #4E75FF;
-color: #fff;
-cursor: pointer;
-}
-
-button[data-start].disabled:hover {
+button[this-date]:hover {
 background: #6c8cff;
 }
 .timer {
@@ -102,9 +94,7 @@ color: #2e2f42;
 text-transform: uppercase;
 color: #2e2f42;
 }
-.flatpickr-day.today {
-border-color: 4E75FF;
-}
-.flatpickr-day.today:hover {
-background: #6c8cff;
-}
+
+
+/* snackbar */
+
