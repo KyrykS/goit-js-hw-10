@@ -6,10 +6,12 @@
   <title>Promise Notification Form</title>
   <link rel="stylesheet" href="./css/styles.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" />
+  <link rel="stylesheet" href="./css/snackbar.css"/>
 </head>
 <body>
+<section>
   <form class="form" id="promiseForm">
-    <label>
+    <label class="delay-lbl">
       Delay (ms)
       <input type="number" name="delay" required />
     </label>
@@ -28,6 +30,7 @@
 
     <button type="submit">Create notification</button>
   </form>
+</section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
   <script src="./js/2-snackbar.js"></script>
