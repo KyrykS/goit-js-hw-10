@@ -25,7 +25,10 @@ height: 40px;
 input[name="delay"]:hover {
 border: 1px solid #2E2F42;
 }
-
+input[name="delay"].active {
+outline: none;
+border: 1px solid #4e75ff;
+}
 fieldset {
 box-sizing: border-box;
 display: flex;
